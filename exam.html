@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootsrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <script src="https://kit.fontawesome.com/3304859e00.js" crossorigin="anonymous"></script> -->
+
+    <title>Exam Page</title>
+  </head>
+  <body>
+    <!-- <p id="demo" class=" w-25 m-auto"></p> -->
+    <!-- <div class="timer-container">
+      <div id="Progress-contanier">
+          <div id="progBar"></div>
+      </div>
+      <div id="timer"></div>
+    </div> -->
+
+    <!-- <div class="timer-container">
+      <div id="Progress-contanier">
+          <div id="progBar"></div>
+      </div>
+      <div id="timer"></div>
+  </div> -->
+
+    <!-- <div class="text-center"><p id="demo"></p></div>
+  <div>
+      <div class="col-12 text-center ">
+          <p id="welcome"></p>
+      </div>
+  </div> -->
+    <div class="time mw-100">
+      <h4><span class="timeLimit">10:00</span></h4>
+      <div>
+        <div class="passed"></div>
+        <div class="remain"></div>
+      </div>
+    </div>
+    <div class="title d-flex justify-content-end">
+      <!-- <h4>Q<span id="num"></span> of 10</h4> -->
+    </div>
+
+    <div class="col-12 p-4" id="wholepage">
+      <div class="row" style="margin-top: 200px; margin-left: 10px">
+        <div class="col-6 p-lg-3" style="box-shadow: 0 0 10px 2px">
+          <div>
+            <p class="text-center" id="textarea" cols="30" rows="10"></p>
+          </div>
+
+          <div class="col-6 p-md-3 d-flex" style="margin-left: 60px">
+            <div class="col-6">
+              <input class="ans-btn" type="button" id="fans1" />
+            </div>
+            <div class="col-6">
+              <input class="ans-btn" type="button" id="fans2" />
+            </div>
+            <div class="col-6">
+              <input class="ans-btn" type="button" id="fans3" />
+            </div>
+            <div class="col-6">
+              <input class="ans-btn" type="button" id="fans4" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-5 p-lg-3"
+          style="box-shadow: 0 0 10px 2px; margin-left: 50px"
+          id="mark_area"
+        >
+          <p class="w-100 text-center" id="flagarea" cols="30" rows="10"></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="p-md-3">
+          <span
+            ><i class="fa-solid fa-circle-left" id="prev" onclick="Prev();"></i
+          ></span>
+          <span
+            ><i class="fa-solid fa-circle-right" id="next" onclick="Next();"></i
+          ></span>
+          <button onclick="Flag()" id="mark">Mark</button>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <button class="mark" id="submit" onclick="result()">Submit</button>
+
+      <div class="col-12 text-center" style="margin-bottom: 20px">
+        <p id="result"></p>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/jqeary.js"></script>
+    <script src="./js/poper.js"></script>
+    <script src="./js/bootsrap.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

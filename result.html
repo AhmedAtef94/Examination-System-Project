@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootsrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Result page</title>
+  </head>
+  <body>
+    <div
+      class="container w-25 m-auto text-warning my-4 text-center group m-auto w-75 p-2"
+    >
+      <h3>Your G.B.A</h3>
+
+      <p>Name : <span id="name" class="resut-data"></span></p>
+      <p>G.B.A : <span id="gba" class="resut-data"></span></p>
+    </div>
+
+    <script>
+      var spanName = document.getElementById("name");
+      spanName.innerHTML = localStorage.getItem("sessionUsername");
+      var userReslut = sessionStorage.getItem("result");
+      var spanGba = document.getElementById("gba");
+      spanGba.innerHTML = `${(userReslut / 5) * 100}%`;
+    </script>
+
+    <!-- <script src="./js/bootsrap.js"></script> -->
+  </body>
+</html>

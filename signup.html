@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootsrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>sign page</title>
+  </head>
+  <body>
+    <span class="d-none" id="username"></span>
+
+    <div class="container my-5 text-center">
+      <div class="group m-auto w-75 p-5">
+        <h1>Login To Exam</h1>
+
+        <input
+          id="signupName"
+          class="form-control my-3"
+          placeholder="Enter Your First Name"
+          type="text"
+        />
+        <input
+          id="signupLastName"
+          class="form-control my-3"
+          placeholder="Enter Your Last Name"
+          type="text"
+        />
+        <input
+          id="signupEmail"
+          class="form-control my-3"
+          placeholder="Enter your email"
+          type="email"
+        />
+
+        <input
+          id="signupPassword"
+          class="form-control my-3"
+          placeholder="Enter  password"
+          type="password"
+        />
+        <input
+          id="signupRenterPassword"
+          class="form-control my-3"
+          placeholder="Re-enter  password"
+          type="password"
+        />
+
+        <p id="exist"></p>
+
+        <button onclick=" signUp()" class="btn btn-outline-info w-100 my-3">
+          Sign Up
+        </button>
+        <p class="text-white">
+          You have an account?
+          <a class="text-white" href="index.html">Signin</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/jqeary.js"></script>
+    <script src="./js/poper.js"></script>
+    <script src="./js/bootsrap.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
